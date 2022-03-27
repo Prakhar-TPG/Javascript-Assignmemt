@@ -63,23 +63,16 @@ console.log(string("test"))
 
 // Q6. Write a JavaScript function which accepts an argument and returns the type of argument.
 
-function type(val){
-    const datatype =[Number, String, Boolean, Object, undefined]
-    if(typeof val ==="object"|| typeof val=== "function"){
-        for(let i=0;i<datatype.length;i++){
-            if(val instanceof datatype[i]){
-                return datatype[i];
-            }
-        }
+function type(str){
+    let x = typeof str;
+    return x
     }
-    else{
-    return typeof val;
-}
-}
 console.log(type(12))
 console.log(type("hello"))
 console.log(type(true))
-console.log(type())
+console.log(type({a:1}));
+console.log(type(undefined));
+console.log(type(function(){}));
 
 // Q7. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
 
