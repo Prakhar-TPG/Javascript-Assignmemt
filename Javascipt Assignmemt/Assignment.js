@@ -1,4 +1,4 @@
-// Q1. Write a JavaScript program to compute the sum of an array of integers.
+//Q1. Write a JavaScript program to compute the sum of an array of integers.
 
 let arr=[1,2,3,4,5]
 let sum=0
@@ -7,9 +7,9 @@ for(let i=0;i<arr.length;i++){
 }
 console.log(sum)
 
-// Q2. Write a JavaScript program to get the first n Fibonacci numbers
+//Q2. Write a JavaScript program to get the first n Fibonacci numbers
 
-// const number = parseInt(prompt('Enter the number: '));
+const number = parseInt(prompt('Enter the number: '));
 let a=0
 let b=1
 let c
@@ -22,7 +22,7 @@ for(let i=1;i<=number;i++){
     b=c;
 }
 
-// Q3. Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.
+//Q3. Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.
 
 function leap(year){
     if((year%4==0) && (year%100!==0) || (year%4==400)){
@@ -35,7 +35,7 @@ function leap(year){
 const year = prompt('Enter a year:');
 leap(year);
 
-// Q4. Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.
+// // Q4. Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.
 
 function diff(number){
     if(number<=19){
@@ -45,10 +45,10 @@ function diff(number){
         return number*3;
     }
 }
-const number= prompt('Enter a number')
+const num= prompt('Enter a number')
 console.log(diff(number))
 
-// Q5. Write a JavaScript program to create a new string adding "Py" in front of a given string. If the given string begins with "Py" then return the original string.
+//Q5. Write a JavaScript program to create a new string adding "Py" in front of a given string. If the given string begins with "Py" then return the original string.
 
 function string(str){
     if(str.substring(0,2)==='Py'){
@@ -61,7 +61,7 @@ function string(str){
 console.log(string("Pycharm"))
 console.log(string("test"))
 
-// Q6. Write a JavaScript function which accepts an argument and returns the type of argument.
+//Q6. Write a JavaScript function which accepts an argument and returns the type of argument.
 
 function type(str){
     let x = typeof str;
@@ -74,7 +74,7 @@ console.log(type({a:1}));
 console.log(type(undefined));
 console.log(type(function(){}));
 
-// Q7. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
+//Q7. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
 
 function longestword(string){
     let split= string.split(' ')
@@ -88,9 +88,9 @@ function longestword(string){
 }
 console.log(longestword("Javascript is a programming language"))
 
-// Q8. Write a JavaScript program to sort the items of an array.
+//Q8. Write a JavaScript program to sort the items of an array.
 
-let arr=[15,8,6,45,36,97,2]
+let array=[15,8,6,45,36,97,2]
 for(let i=0;i<arr.length;i++){
     for(let j=i+1;j<arr.length;j++){
         if(arr[i]>arr[j]){
